@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE3E3"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Switch : "
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/wifiSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/onClickButton"
+            android:paddingVertical="15dp"
+            android:text="WiFi"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/bluetoothSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/onClickButton"
+            android:paddingVertical="15dp"
+            android:text="Bluetooth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FABFBF"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Toggle Switch :"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/wifiToggle"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:onClick="@string/onToggleButton"
+            android:text="ToggleButton"
+            android:textOff="WiFi OFF"
+            android:textOn="WiFi ON" />
+
+        <ToggleButton
+            android:id="@+id/bluetoothToggle"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:onClick="@string/onToggleButton"
+            android:text="ToggleButton"
+            android:textOff="Bluetooth OFF"
+            android:textOn="Bluetooth ON" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+</LinearLayout>
